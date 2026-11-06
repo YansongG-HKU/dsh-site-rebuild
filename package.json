@@ -1,0 +1,77 @@
+{
+  "name": "dsh-site-rebuild",
+  "version": "0.2.0",
+  "private": true,
+  "description": "网站复刻（Site Rebuild）：研究任意网站并记录证据，生成自己的重建版本，用三档视口与感知指标（SSIM + 色块布局 + 设计令牌）校验相似度。DSH 原生插件，纯 Node、零运行时第三方依赖。",
+  "license": "MIT",
+  "author": "YansongG-HKU",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "lib",
+    "client.js",
+    "src",
+    "scripts",
+    "locale",
+    "cordis.patch.yml",
+    "icon.svg",
+    "docs",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build:client": "node scripts/build-client.mjs",
+    "test": "node --test test/unit/*.test.mjs",
+    "test:integration": "node --test test/integration/*.test.mjs",
+    "bench": "node test/perf/bench.mjs",
+    "check": "node --check index.js && node scripts/build-client.mjs --check"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "site-rebuild",
+    "website-clone",
+    "website-rebuild",
+    "screenshot-diff",
+    "visual-regression",
+    "design-tokens"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YansongG-HKU/dsh-site-rebuild.git"
+  },
+  "homepage": "https://github.com/YansongG-HKU/dsh-site-rebuild#readme",
+  "bugs": {
+    "url": "https://github.com/YansongG-HKU/dsh-site-rebuild/issues"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-renderer",
+        "@deepseek-ai/dsh-client-ui-layout",
+        "@deepseek-ai/dsh-client-ui-sidebar"
+      ],
+      "manifestVersion": 1
+    }
+  },
+  "engines": {
+    "node": ">=22",
+    "dsh": ">=0.2.2-rc.1"
+  }
+}

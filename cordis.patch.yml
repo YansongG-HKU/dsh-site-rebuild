@@ -1,0 +1,13 @@
+# dsh-site-rebuild bundle layer.
+#
+# One Host plugin row. The Host half owns the project store, the CDP capture
+# engine, the likeness checks, the `craft_*` agent tools and the loopback panel
+# routes. The Client half (declared through `dsh.client`) renders the sidebar
+# panel and calls the same Host service — one source of truth.
+- insert:
+    - id: dsh-site-rebuild
+      name: dsh-site-rebuild
+      config:
+        widths: [1440, 768, 375]
+        maxPages: 3
+        openStates: false

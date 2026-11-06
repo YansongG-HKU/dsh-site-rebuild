@@ -1,0 +1,19 @@
+# dependencies
+node_modules/
+.pnpm-store/
+
+# local / runtime data
+.tmp/
+*.log
+*.bak
+*.pid
+
+# test artifacts
+coverage/
+.playwright-mcp/
+
+# editor / OS
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
