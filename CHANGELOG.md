@@ -2,7 +2,7 @@
 
 本项目遵循 [语义化版本](https://semver.org/lang/zh-CN/)。
 
-## [Unreleased]
+## [0.2.1] — 2026-11-10
 
 - 取消、超时和卸载会向后台任务发出中止信号。取消和超时状态保留到后台退出，同一项目在清理完成前保持忙碌。见 [#1](https://github.com/YansongG-HKU/dsh-site-rebuild/issues/1)。
 
