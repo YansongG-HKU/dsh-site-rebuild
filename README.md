@@ -6,7 +6,7 @@
 > 网站复刻工作流（Study → Brief → Build → Check → Ready）的 DSH 原生实现：纯 Node、零运行时第三方依赖、自写 CDP 浏览器驱动 / PNG 编解码 / 像素差 / SSIM / 设计令牌提取，一个共享浏览器进程，六个智能体工具 + 一个侧边栏面板。
 
 - 仓库：<https://github.com/YansongG-HKU/dsh-site-rebuild>
-- 插件包：`dsh-site-rebuild` v0.2.2（MIT）
+- 插件包：`dsh-site-rebuild` v0.2.3（MIT）
 - 面板：左侧栏「网站复刻」（order 27；若被插件图标管理隐藏，可在「更多 → 插件图标」里点「显示」）
 - 工具：`craft_study` · `craft_brief` · `craft_check` · `craft_projects` · `craft_evidence` · `craft_serve`
 - 数据目录：`%DSH_HOME%/site-rebuild`（可用 `dataDir` 覆盖）

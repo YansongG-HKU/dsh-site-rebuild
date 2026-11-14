@@ -12,7 +12,7 @@ window.__ModuleLoader__.load({
     const NS = "dsh-site-rebuild"
     const API_BASE = "/dsh-site-rebuild"
     const REQ_HEADER = "x-dsh-site-rebuild"
-    const VERSION = "0.2.0"
+    const VERSION = "0.2.3"
     const LANG_KEY = "dsh-site-rebuild.lang"
     const ACCENT = "#0f6b5c"
     const ACCENT_DARK = "#4fd1b5"

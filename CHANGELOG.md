@@ -2,6 +2,10 @@
 
 本项目遵循 [语义化版本](https://semver.org/lang/zh-CN/)。
 
+## [0.2.3] — 2026-11-15
+
+- 对齐 DeepSeek Harness 0.2.2-rc.3：`engines.dsh` 提升至 `>=0.2.2-rc.3`，面板版本号同步为 `0.2.3`；工作流与工具契约不变，56/56 测试通过。
+
 ## [0.2.2] — 2026-11-12
 
 - 删除项目与同项目研究、校验互斥，覆盖任务取消后的清理阶段。删除失败后可重试。[Issue #3](https://github.com/YansongG-HKU/dsh-site-rebuild/issues/3)
